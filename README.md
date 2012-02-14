@@ -1,17 +1,21 @@
-# CodeIgniter-Breadcrumbs
-
 Breadcrumbs is an small library that helps your manage HTML breadcrumbs with CodeIgniter.
 
+## Instalation
 
+Put Breadcrumbs.php in application/library folder
+Put breadcrumbs.php in application/config folder
 
-## Example
+## Example of use
 
-// load libary
-$this->load->library('breadcrumb');
+// load Breadcrumbs
+$this->load->library('breadcrumbs');
 
 // add breadcrumbs
-$this->breadcrumb->add('Home', '/');
-$this->breadcrumb->add('Page', '/page');
+$this->breadcrumbs->push('Section', '/section');
+$this->breadcrumbs->push('Page', '/section/page');
+
+// unshift crumb
+$this->breadcrumbs->unshift('Home', '/');
 
 // output
 $this->breadcrumb->show();
