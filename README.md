@@ -18,4 +18,4 @@ Breadcrumbs is an small library that helps your manage HTML breadcrumbs with Cod
 	$this->breadcrumbs->unshift('Home', '/');
 
 	// output
-	$this->breadcrumb->show();
+	$this->breadcrumbs->show();
