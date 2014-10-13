@@ -56,8 +56,11 @@ class Breadcrumbs {
 		// no page or href provided
 		if (!$page OR !$href) return;
 		
+		// Prepend site url
+		$href = site_url().$href;
+		
 		// push breadcrumb
-		$this->breadcrumbs[] = array('page' => $page, 'href' => $href);
+		$this->breadcrumbs[$href] = array('page' => $page, 'href' => $href);
 	}
 	
 	// --------------------------------------------------------------------
