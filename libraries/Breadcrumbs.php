@@ -78,6 +78,9 @@ class Breadcrumbs {
 		// no crumb provided
 		if (!$page OR !$href) return;
 		
+		// Prepend site url
+		$href = site_url($href);
+		
 		// add at firts
 		array_unshift($this->breadcrumbs, array('page' => $page, 'href' => $href));
 	}
