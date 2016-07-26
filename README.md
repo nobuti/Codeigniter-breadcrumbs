@@ -1,3 +1,5 @@
+__No longer maintained__
+
 Breadcrumbs is an small library that helps your manage HTML breadcrumbs with CodeIgniter.
 
 ## Instalation
